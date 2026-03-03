@@ -10,16 +10,16 @@ class Iwashere < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Murchoid/iwashere/releases/download/v0.2.0/iwashere_0.2.0_darwin_amd64.tar.gz"
-      sha256 "608fd7c77325435072466a70a673d89c355d14358d72d45a2817ac4e021e65f8"
+      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.0/iwashere_0.2.0_darwin_amd64.tar.gz"
+      sha256 "e5591b5161fe62b8aa8f6032df6f48d4402049164afa73f47fa32d8ea7c90e6d"
 
       define_method(:install) do
         bin.install "iwashere"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Murchoid/iwashere/releases/download/v0.2.0/iwashere_0.2.0_darwin_arm64.tar.gz"
-      sha256 "c70f27da12e3459eb3e1b70ace8e7208b311e9d2dd3c2321ffbb1bbda514c9fe"
+      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.0/iwashere_0.2.0_darwin_arm64.tar.gz"
+      sha256 "44d565618bf0d12239c3549a41bd6418376d5524ba2c08765a89645414b71a56"
 
       define_method(:install) do
         bin.install "iwashere"
@@ -29,15 +29,15 @@ class Iwashere < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Murchoid/iwashere/releases/download/v0.2.0/iwashere_0.2.0_linux_amd64.tar.gz"
-      sha256 "60825c9b2d2c1f59b6f095fea75041ee2cc11a4bd3cc50ef6b5e2f821e7806a0"
+      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.0/iwashere_0.2.0_linux_amd64.tar.gz"
+      sha256 "43baafb9c26e1e7286f2ff7416c42d9787fb383bc64cb62392bdadf8d87ec3b5"
       define_method(:install) do
         bin.install "iwashere"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Murchoid/iwashere/releases/download/v0.2.0/iwashere_0.2.0_linux_arm64.tar.gz"
-      sha256 "c55b90420be0b1b1182c0e2c654cc6eeafdff717986a8b2be1f25d6f217afd0e"
+      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.0/iwashere_0.2.0_linux_arm64.tar.gz"
+      sha256 "8861c4b4e7d3bc929d2f119f65b188cebf62b0a1d6c98a01b53a412e87095353"
       define_method(:install) do
         bin.install "iwashere"
       end
