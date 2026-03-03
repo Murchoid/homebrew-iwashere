@@ -5,21 +5,21 @@
 class Iwashere < Formula
   desc "Context preservation tool for developers"
   homepage "https://github.com/Murchoid/iwashere"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.1/iwashere_0.2.1_darwin_amd64.tar.gz"
-      sha256 "6932832adf2e1ef9343441e0926a3d27f3fc3c602a4bd20d1422d7e44fc4cf87"
+      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.2/iwashere_0.2.2_darwin_amd64.tar.gz"
+      sha256 "d103af77379b18302279da0add2cd89c667d5f46dfd8c1e674100b1782de0a71"
 
       define_method(:install) do
         bin.install "iwashere"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.1/iwashere_0.2.1_darwin_arm64.tar.gz"
-      sha256 "17033c3ae5f26f349e20ad552a20091ef453e2b76cc918b2ab33f1c5ca63b725"
+      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.2/iwashere_0.2.2_darwin_arm64.tar.gz"
+      sha256 "8f8337fcbdcf2483244fe17241d3f63d9876e3087115dcd998c64461e6a08e6c"
 
       define_method(:install) do
         bin.install "iwashere"
@@ -29,15 +29,15 @@ class Iwashere < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.1/iwashere_0.2.1_linux_amd64.tar.gz"
-      sha256 "155b02bc0a501dbd96297ae2551765b128948435fd354f153d10c4985ce272bf"
+      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.2/iwashere_0.2.2_linux_amd64.tar.gz"
+      sha256 "7b18c9f92a0c1dc494a7cfd5890b66299f4f7acf026edf253bb8736ca301b1ae"
       define_method(:install) do
         bin.install "iwashere"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.1/iwashere_0.2.1_linux_arm64.tar.gz"
-      sha256 "5f95870e67d41e94db3df5a92c19253e4a42b9d65c97861d9a31902976d8d848"
+      url "https://github.com/Murchoid/iwashere/releases/tag/v0.2.2/iwashere_0.2.2_linux_arm64.tar.gz"
+      sha256 "8c1fd6d268e2240ba0763e2236613f25c80dae508e29bc87f5cf31950de69f29"
       define_method(:install) do
         bin.install "iwashere"
       end
